@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My portfolio</title>
+    <meta name="description" content="Latheesh Shaik's Portfolio - MERN Stack Developer">
+    <meta name="keywords" content="Latheesh Shaik, MERN Stack Developer, Portfolio">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="nav-brand">Latheesh Shaik</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <div id="nav-menu" class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <section id="intro">
+                <h1>I am a</h1>
+                <h1><span id="typing-text"></span></h1>
+                <div class="buttons">
+                    <a href="/Latheesh_mern_resume.pdf" class="button" download>Download CV</a>
+                    <a href="#about" id="learn-more-button" class="button">Learn More about me</a>
+                </div>
+            </section>
+            
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="bio">
+                <img id='pic' src="/image3.jpg" alt="My Photo">
+                <p>
+                    
+                    A motivated and adaptable professional with a rich and diverse background in Electrical and Electronics Engineering, complemented by a degree in History. My career journey has seen a significant transition from computer operations to web development, a shift driven by my passion for technology and innovation.
+                    
+                    Recently, I completed a comprehensive MERN stack development course, equipping me with the skills to build dynamic and responsive web applications. I am now actively seeking a MERN Stack Developer role where I can apply my expertise to create impactful digital solutions.
+                    
+                    In my leisure time, I enjoy playing chess, which sharpens my strategic thinking, and I find solace in music and comedy. These hobbies provide a balanced lifestyle, nurturing both my analytical and creative sides.
+                    
+                    On a personal note, I come from a supportive family. My father works as a salesman in a reputed mobile store, demonstrating dedication and hard work, while my mother, a homemaker, has instilled in me the values of patience and resilience.
+                    
+                    I am excited about the opportunities ahead and am eager to contribute to a dynamic team where I can continue to grow and make meaningful contributions.
+                    </p>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="card">
+                        <a href="#"><img src="/html5.png" alt="html5"></a>
+                        <a href="#">HTML5</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="/css.png" alt="css3"></a>
+                        <a href="#">CSS3</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="/bootstrap.jpeg" alt="bootstrap"></a>
+                        <a href="#">BOOTSTRAP</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="/javascript.png" alt="Javascript"></a>
+                        <a href="#">JAVASCRIPT</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="/react js.png" alt="React js"></a>
+                        <a href="#">REACT JS</a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="/git.png" alt="Git"></a>
+                        <a href="#">GIT</a>
+                    </div>
+                </div>
+            </section>   
+           
+            <section id="projects">
+                <h2>Projects</h2>
+               
+                <div class="project-grid">
+                    <img src="/ecommerce.png" alt="Project 1">
+                    <h2><span>Project Name:</span><a href="https://ecommerce-project-seven-blue.vercel.app/" target="_blank" rel="noopener noreferrer"> Ecommerce website using React js</a></h2>
+                    <p>Description: Created an e-commerce application with React JS that dynamically fetches product data from an API, providing users with a smooth browsing experience and real-time product updates.</p>
+                </div>
+                <div class="project-grid">
+                    <img src="/trello-clone.png" alt="Project 1">
+                    <h2><span>Project Name:</span>  <a href="https://trello-klone.vercel.app/" target="_blank" rel="noopener noreferrer">Trello Clone using React js</a></h2>
+                    <p>Description: Built a Trello-inspired task management application using React JS, enabling users to create, edit, and organize tasks in customizable boards</p>
+                </div>
+                <div class="project-grid">
+                    <img src="/restaurant-project.png" alt="Project 1">
+                    <h2> <span>Project Name:</span>   <a href="https://nerdishtechie.github.io/restaurant-project.github.io/" target="_blank" rel="noopener noreferrer">
+                     Restaurant Project</a></h2>
+                    <p><span>Description:</span> Developed a responsive restaurant website featuring a modern layout, interactive menu, and seamless user experience with minimal JavaScript for dynamic content updates.</p>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form action="your-form-handler-url" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+            <button id="back-to-top">Back to Top</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Latheesh Shaik. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-media">
+            <h3>Connect with me</h3>
+            <a href="#"><img src="/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="/linkedin.png" alt="Linkedin"></a>
+            <a href="#"><img src="/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

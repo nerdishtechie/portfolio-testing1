@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px 0;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .nav-toggle {
+        display: block;
+    }
+
+  
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 70px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.bio img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.bio p {
+    line-height: 1.6;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 150px;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-grid h2 {
+    font-size: 20px;
+}
+
+.project-grid p {
+    line-height: 1.6;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.social-media h3 {
+    margin: 10px 0;
+}
